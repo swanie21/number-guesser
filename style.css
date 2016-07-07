@@ -1,11 +1,43 @@
+section {
+  text-align: center;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Fascinate', cursive;
+  font-size: 3em;
+}
+
+h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.guess, .clear, .reset {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 #previousUserGuess {
   background-color: yellow;
-  width: 200px;
-  height: 200px;
+  border: 15px solid blue;
+  border-radius: 10%;
   font-size: 5em;
+  height: 200px;
+  line-height: 200px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
 }
 
 #message {
-  width: 700px;
-  height: 100px;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 50px;
+  margin-top: 30px;
+  text-align: center;
+  width: 100;
+}
+
+#numberGuess {
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 100px;
 }

@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Number Guesser</title>
+    <link href="https://fonts.googleapis.com/css?family=Fascinate" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1>Guess the Number</h1>
-      <h4 id ="instruction">Make a guess between 1 to 100</h4>
-        <div id="previousUserGuess"></div>
-        <div id="message"><p></p></div>
-          <input type="number" min="1" max="100" id="numberGuess" placeholder="Your best guess" />
-          <button class="guess">Guess</button>
-          <input type="button" value="Clear" class="clear" onClick="clearNumber()" disabled />
-          <input type="button" value="Reset" class="reset" onclick="resetNumber()" disabled />
+    <section>
+      <h1>Guess the Number</h1>
+      <h4 id ="instruction">Make a guess between 1 and 100</h4>
+      <div id="previousUserGuess"></div>
+      <div id="message"><p></p></div>
+        <input type="number" min="1" max="100" id="numberGuess" placeholder="Your best guess" />
+        <button class="guess">Guess</button>
+        <input type="button" value="Clear" class="clear" onClick="clearNumber()" disabled />
+        <input type="button" value="Reset" class="reset" onclick="resetNumber()" disabled />
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

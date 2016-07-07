@@ -7,7 +7,7 @@ function submitGuess() {
   document.querySelector('.reset').disabled = false;
   document.getElementById('instruction').innerText = 'Your previous guess was...';
   if (parseInt(randomGuess.value) === randomNumber) {
-    return document.getElementById('message').innerText = 'You are correct!';
+    return document.getElementById('message').innerText = 'You are brilliant!';
   }
   if (parseInt(randomGuess.value) > randomNumber) {
    document.getElementById('message').innerText = 'Sorry, that guess is too high. Try a lower number.';
