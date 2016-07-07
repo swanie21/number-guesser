@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -9,10 +10,10 @@
       <h4 id ="instruction">Make a guess between 1 to 100</h4>
         <div id="previousUserGuess"></div>
         <div id="message"><p></p></div>
-          <input type="number" min="1" max="100" id="numberGuess" placeholder="Your best guess">
+          <input type="number" min="1" max="100" id="numberGuess" placeholder="Your best guess" />
           <button class="guess">Guess</button>
-          <input type="button" value="Clear" class="clear" onClick="clearNumber()" />
-          <input type="button" value="Reset" class="reset" onclick="resetNumber()" />
+          <input type="button" value="Clear" class="clear" onClick="clearNumber()" disabled />
+          <input type="button" value="Reset" class="reset" onclick="resetNumber()" disabled />
     <script src="script.js"></script>
   </body>
 </html>
