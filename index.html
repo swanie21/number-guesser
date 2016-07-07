@@ -4,20 +4,24 @@
     <meta charset="utf-8">
     <title>Number Guesser</title>
     <link href="https://fonts.googleapis.com/css?family=Fascinate" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
++   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <section>
-      <h1>Guess the Number</h1>
+    <h1>Guess the Number</h1>
       <h4 id ="instruction">Make a guess between 1 and 100</h4>
-      <div id="previousUserGuess"></div>
-      <div id="message"><p></p></div>
-        <input type="number" min="1" max="100" id="numberGuess" placeholder="Your best guess" />
-        <button class="guess">Guess</button>
-        <input type="button" value="Clear" class="clear" onClick="clearNumber()" disabled />
-        <input type="button" value="Reset" class="reset" onclick="resetNumber()" disabled />
-    </section>
+        <div id="previousUserGuess"></div>
+        <div id="message"><p></p></div>
+          <input type="number" min="1" max="100" id="numberGuess" placeholder="Your best guess" />
+          <input type="button" value="Guess" class="guess" />
+          <input type="button" value="Clear" class="clear" onClick="clearNumber()" disabled />
+          <input type="button" value="Reset" class="reset" onclick="resetNumber()" disabled />
+      <h4 class="userMakesNumbers">To make game more exciting please specify your own minimum and maximum numbers</h4>
+          <input type="number"  id="userMinNumber" placeholder="Input min number" />
+          <input type="number"  id="userMaxNumber" placeholder="Input max number" />
+          <input type="button" value="Submit Your Numbers" class="userNumbers" onClick="submitUserNumbers()" />
+      </section>
     <script src="script.js"></script>
   </body>
 </html>
