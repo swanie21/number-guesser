@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -6,18 +5,14 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1>Number Guesser</h1>
-      <h4>Your previous guess was...</h4>
+    <h1>Guess the Number</h1>
+      <h4 id ="instruction">Make a guess between 1 to 100</h4>
         <div id="previousUserGuess"></div>
-          <input id="numberGuess" placeholder="Your best guess">
+        <div id="message"><p></p></div>
+          <input type="number" min="1" max="100" id="numberGuess" placeholder="Your best guess">
           <button class="guess">Guess</button>
-          <button class="clear">Clear</button>
-          <button class="reset">Reset</button>
+          <input type="button" value="Clear" class="clear" onClick="clearNumber()" />
+          <input type="button" value="Reset" class="reset" onclick="resetNumber()" />
     <script src="script.js"></script>
   </body>
 </html>
-<!--need to add a type attribute to input box
-    should have a min and max between 1-100-->
-<!--need to add code for error boxes-->
-<!--need two input boxes to add min and max
-    numbers that can be entered-->

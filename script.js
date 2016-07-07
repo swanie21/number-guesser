@@ -1,41 +1,45 @@
-// Random number between 1-100
-  //Math.ceil(Math.random() * 100)
-
-// Elment to display number guessed
+//random number generator
+var randomNumber = Math.floor((Math.random() * 100) + 1);
 var randomGuess = document.getElementById('numberGuess');
 var guessButton = document.querySelector('.guess');
 
+function submitGuess() {
+  document.getElementById('instruction').innerText = 'Your previous guess was...';
+  if (parseInt(randomGuess.value) === randomNumber) {
+    return document.getElementById('message').innerText = 'You are correct!';
+  } else if (parseInt(randomGuess.value) < 1 || parseInt(randomGuess.value) > 100 || isNaN(parseInt(randomGuess.value))) {
+    document.getElementById('instruction').innerText = 'This number is not within range';
+    return document.getElementById('message').innerText = 'Please choose a valid number!';
+  } else if (parseInt(randomGuess.value) > randomNumber) {
+    document.getElementById('message').innerText = 'Sorry, that guess is too high. Try a lower number.';
+    return document.getElementById(numberGuess).value='';
+  } else if (parseInt(randomGuess.value) < randomNumber) {
+    return document.getElementById('message').innerText = 'Sorry, that guess is too low. Try a higher number.';
+    return document.getElementById(numberGuess).value='';
+  }
+}
+
 guessButton.addEventListener('click', function () {
     previousUserGuess.innerText = randomGuess.value
+    submitGuess();
 });
 
-// make sure number inputed returns as number and not string
-//return alert if number is too high
-//return alert if number is too low
-
-// if (number > 100) {
-//   alert('Sorry, that guess is too high. Try a lower number.')
-// } else (number < 1) {
-//   alert('Sorry, that guess is too low. Try a higher number.')
-// }
-//need to figure out how ramndom will stay unless reset
-
-
-//configure clearing button
-  //to clear input area
-    //should be disabled if nothing is in the input box
-
-// configure reset button
-  // will reset game and new number
-    //should be disabled if nothing to reset
-
-// should display error message if gues is not a number
-// should display error message if guess is not between 1-100
-
-// add addition inputs to spedify min and max number
-  //will change the random number that is generated
-    //will have to reconfigure input guess box to accomidate new number range
-
-//everytime user wins max and min number increase by 10
-  // will change the random number that is generated
-    //will have to reconfigure input guess box to accomidate new number range
+//
+//disable buttons
+//document.querySelector('.reset').disabled = true;
+//if (document.getElementById)
+//document.querySelector('.clear').disabled = true;
+//
+//clear function
+function clearNumber () {
+document.getElementById('numberGuess').value = '';
+}
+//
+//reset function: clear number, make new randomNumber, clear message (.innerText)
+function resetNumber() {
+document.getElementById('instruction').innerText = 'Make a guess between 1 to 100';
+document.getElementById('message').innerText = '';
+document.getElementById('numberGuess').value = '';
+document.getElementById('previousUserGuess').innerText='';
+randomNumber = Math.floor((Math.random() * 100) + 1);
+}

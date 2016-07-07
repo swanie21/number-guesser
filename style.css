@@ -4,5 +4,8 @@
   height: 200px;
   font-size: 5em;
 }
-/* will need to create styles for buttons when unclickable*/
-/*will need to design error box when number is valid*/
+
+#message {
+  width: 700px;
+  height: 100px;
+}
