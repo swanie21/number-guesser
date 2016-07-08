@@ -1,11 +1,15 @@
 section {
+  border: 10px solid black;
   text-align: center;
-  width: 100%;
+  margin: auto;
+  padding-bottom: 15px;
+  width: 600px;
 }
 
 h1 {
   font-family: 'Fascinate', cursive;
   font-size: 3em;
+  margin-top: 10px;
 }
 
 h4 {
