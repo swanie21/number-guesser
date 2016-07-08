@@ -16,7 +16,7 @@ h4 {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.guess, .clear, .reset {
+.guess, .clear, .reset. .userNumbers {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -54,8 +54,4 @@ h4 {
 #userMinNumber, #userMaxNumber {
   font-family: 'Roboto Condensed', sans-serif;
   width: 100px;
-}
-
-.userNumbers {
-  font-family: 'Roboto Condensed', sans-serif;
 }
