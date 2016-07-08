@@ -40,8 +40,6 @@ function submitGuess() {
 //clear function
 function clearNumber () {
   document.getElementById('numberGuess').value = '';
-  document.getElementById('userMinNumber').value = '';
-  document.getElementById('userMaxNumber').value = '';
 }
 
 //reset function: clear number, make new randomNumber, clear message
@@ -54,6 +52,8 @@ function resetNumber() {
   document.querySelector('.reset').disabled = true;
   document.getElementById('userMinNumber').value = '';
   document.getElementById('userMaxNumber').value = '';
+  min = parseInt(document.getElementById('userMinNumber').value) || 1;
+  max = parseInt(document.getElementById('userMaxNumber').value) || 100;
   randomNumberVariable();
 }
 

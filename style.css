@@ -1,9 +1,24 @@
+body {
+  background-color: red;
+}
+
 section {
+  background-color: white;
   border: 10px solid black;
   text-align: center;
   margin: auto;
   padding-bottom: 15px;
   width: 600px;
+}
+
+article {
+  background-color: white;
+  border: 10px solid black;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  padding : 20px;
+  width: 560px;
 }
 
 h1 {
@@ -16,7 +31,7 @@ h4 {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.guess, .clear, .reset, .userNumbers {
+.guess, .clear, .reset, .userNumbers, p {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
