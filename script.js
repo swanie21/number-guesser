@@ -18,6 +18,9 @@ function submitGuess() {
   document.querySelector('.reset').disabled = false;
   document.getElementById('instruction').innerText = 'Your previous guess was...';
   if (parseInt(randomGuess.value) === randomNumber) {
+    min = min - 10;
+    max = max + 10;
+    randomNumber = randomNumberVariable();
     return document.getElementById('message').innerText = 'You are brilliant!';
   }
   if (parseInt(randomGuess.value) < min || parseInt(randomGuess.value) > max || isNaN(parseInt(randomGuess.value))) {
