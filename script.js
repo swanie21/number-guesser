@@ -1,7 +1,6 @@
 var randomNumber = Math.floor((Math.random() * 100) + 1);
 var randomGuess = document.getElementById('numberGuess');
 var guessButton = document.querySelector('.guess');
-var setUserNumbers = document.querySelector('.userNumbers');
 
 guessButton.addEventListener('click', function () {
     previousUserGuess.innerText = randomGuess.value;
@@ -45,11 +44,10 @@ document.querySelector('.reset').disabled = true;
 randomNumber = Math.floor((Math.random() * 100) + 1);
 }
 
-// setUserNumbers.addEventListener('click', function() {
-//   document.getElementById(parseInt('userMinNumber').value = var min;
-//   document.getElementById(parseInt('userMaxNumber').value = var max;
-//   playWithUserNumbers();
-// }
+function submitUserNumbers() {
+parseInt(document.getElementById('userMinNumber').value);
+parseInt(document.getElementById('userMaxNumber').value);
+};
 
 //submit button needs to check that the min is less than the max
 
