@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset= "utf-8">
     <title>Number Guesser</title>
     <link href="https://fonts.googleapis.com/css?family=Fascinate" rel="stylesheet">
-+   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <section>
-    <h1>Guess the Number</h1>
-      <h4 id ="instruction">Make a guess between 1 and 100</h4>
-        <div id="previousUserGuess"></div>
-        <div id="message"><p></p></div>
-          <input type="number" id="numberGuess" placeholder="Your best guess" />
-          <input type="button" value="Guess" class="guess" />
-          <input type="button" value="Clear" class="clear" onClick="clearNumber()" disabled />
-          <input type="button" value="Reset" class="reset" onclick="resetNumber()" disabled />
-      <h4 class="userMakesNumbers">To make game more exciting please specify your own minimum and maximum numbers</h4>
-          <input type="number"  id="userMinNumber" placeholder="Input min number" />
-          <input type="number"  id="userMaxNumber" placeholder="Input max number" />
-          <input type="button" value="Submit Your Numbers" class="userNumbers" onClick="submitUserNumbers()" />
-      </section>
-    <script src="script.js"></script>
+      <h1>Guess the Number</h1>
+        <h4 id ="instruction">Make a guess between 1 and 100</h4>
+          <div id="previousUserGuess" class="numberBox"></div>
+          <div id="js-message" class="message"></div>
+            <input type="number" id="numberGuess" class="guessButton" placeholder="Your best guess" onkeyup="enableBtn()" />
+            <input type="button" value="Guess" class="guess" />
+            <input type="button" value="Clear" class="clear" onClick="clearNumber()" disabled />
+            <input type="button" value="Reset" class="reset" onclick="resetNumber()" disabled />
+        <h4 class="userMakesNumbers">To make game more exciting please specify your own minimum and maximum numbers</h4>
+            <input type="number" id="userMinNumber" placeholder="Input min number" onkeyup="enableBtn()" />
+            <input type="number" id="userMaxNumber" placeholder="Input max number" onkeyup="enableBtn()" />
+            <input type="button" value="Submit Your Numbers" class="userNumbers" onClick="submitUserNumbers()" />
+    </section>
+    <article class="instructions">
+      <h4><em>Instructions:</em></h4>
+      <p>A random number will be generated from 1 to 100 upon entering the site and with your brilliance you will guess the magical number. If you are too high or too low a prompt will inform you and you can guess accordingly. If you guess a value outside of 1 and 100 you will be informed it is invalid and you need to guess within the number range.
+      </p>
+      <p>After you guess the correct number the minimum and maximum number will decrease and increase, respectively, by a factor of 10. If at anytime you want to reset the game just click the reset button and you will return to a minimum number of 1 and a maximum number of 100. If you entered a number in the guess box and want to clear it, feel free to hit your backspace key or click the clear button.
+      </p>
+      <p>You can also enter your own minimum and maximum numbers into the range below the guess. You will need to make sure that the number entered in the left box is lower than the number entered in the right box for your numbers to be submitted otherwise an error message will appear. When you submit your own number range, the random number will be selected from this new range.<br> <br> Lastly, have fun and enjoy killing some time playing the game!
+      </p>
+    </article>
+    <script src = "script.js"></script>
   </body>
 </html>
