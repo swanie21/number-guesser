@@ -11,9 +11,9 @@
     <section>
       <h1>Guess the Number</h1>
         <h4 id ="instruction">Make a guess between 1 and 100</h4>
-          <div id="previousUserGuess" class="numberBox"></div>
-          <div id="js-message" class="message"></div>
-            <input type="number" id="numberGuess" class="guessButton" placeholder="Your best guess" onkeyup="enableBtn()" />
+          <div id="previousUserGuess"></div>
+          <div id="message"><p></p></div>
+            <input type="number" id="numberGuess" placeholder="Your best guess" onkeyup="enableBtn()" />
             <input type="button" value="Guess" class="guess" />
             <input type="button" value="Clear" class="clear" onClick="clearNumber()" disabled />
             <input type="button" value="Reset" class="reset" onclick="resetNumber()" disabled />
@@ -23,7 +23,7 @@
             <input type="button" value="Submit Your Numbers" class="userNumbers" onClick="submitUserNumbers()" />
     </section>
     <article class="instructions">
-      <h4><em>Instructions:</em></h4>
+      <p><em>Instructions:</em></p>
       <p>A random number will be generated from 1 to 100 upon entering the site and with your brilliance you will guess the magical number. If you are too high or too low a prompt will inform you and you can guess accordingly. If you guess a value outside of 1 and 100 you will be informed it is invalid and you need to guess within the number range.
       </p>
       <p>After you guess the correct number the minimum and maximum number will decrease and increase, respectively, by a factor of 10. If at anytime you want to reset the game just click the reset button and you will return to a minimum number of 1 and a maximum number of 100. If you entered a number in the guess box and want to clear it, feel free to hit your backspace key or click the clear button.
