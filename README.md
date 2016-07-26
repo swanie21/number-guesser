@@ -2,9 +2,11 @@
 
 Module 1, Project #1 - Created by Adam Bernard & Kirsten Swanson
 
+![alt tag](../img/number-guesser.png)
+
 ## Game Introduction
 
-This game requires the player to guess a number that the game has randomly chosen. The range is 0-100 by default, but the player can enter their own range if they wish at the bottom of the page. The game will give the player hints if their guess is too low or too high. Once the player guesses correctly, they're notified of their brilliance and the minumum range decreases by 10 and the maximum range increases by 10 to make the game a little more difficult. To play the game again the player needs to click the 'reset' button and a new number will be generated.
+This game requires the player to guess a number that the game has randomly chosen. The range is 0-100 by default, but the player can enter their own range if they wish at the bottom of the page. The game will give the player hints if their guess is too low or too high. Once the player guesses correctly, they're notified of their brilliance and the minimum range decreases by 10 and the maximum range increases by 10 to make the game a little more difficult. To play the game again the player needs to click the 'reset' button and a new number will be generated.
 
 ## Game Functionality
 
